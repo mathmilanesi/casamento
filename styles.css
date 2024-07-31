@@ -1,0 +1,78 @@
+/* Estilos gerais */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+body {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('./walpaper.png') no-repeat center center fixed; /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    color: #ffe139; /* Cor do texto em contraste com o fundo */
+}
+
+#titulo, #titulo2 {
+    text-align: center;
+    margin: 20px;
+    color: #ffffff; /* Cor do texto em contraste com o fundo */
+}
+
+#titulo h1 {
+    font-size: 2.5em; /* Tamanho grande do título */
+    font-weight: bold;
+    
+}
+
+#titulo2 p {
+    font-size: 1.5em; /* Tamanho adequado para a data */
+    font-style: italic;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    background: none; /* Fundo semi-transparente para o contagem regressiva */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px;
+}
+
+.time-section {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.value {
+    display: block;
+    font-size: 2.5em; /* Tamanho grande para a contagem */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1.2em; /* Tamanho de fonte maior para as etiquetas */
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 600px) {
+    #countdown {
+        flex-direction: column;
+    }
+
+    .time-section {
+        margin-bottom: 15px;
+    }
+
+    .value {
+        font-size: 2em; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+
+    .label {
+        font-size: 1em;
+    }
+
+    #titulo, #titulo2 {
+        margin: 10px;
+    }
+}
